@@ -3,7 +3,6 @@ package de.zaunberg.burgershop.ui;
 import de.zaunberg.burgershop.service.Category;
 import de.zaunberg.burgershop.service.ShopService;
 import de.zaunberg.burgershop.service.ShopableItem;
-import net.anotheria.moskito.aop.annotation.Monitor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,6 @@ import java.util.List;
  * @since 16.11.13 22:22
  */
 @Controller
-@Monitor(category = "WEB")
 public class ShopController {
 
 	private static Logger log = LoggerFactory.getLogger(ShopController.class);

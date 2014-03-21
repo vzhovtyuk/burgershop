@@ -1,6 +1,5 @@
 package de.zaunberg.burgershop.ui;
 
-import net.anotheria.moskito.aop.annotation.Monitor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @since 16.11.13 21:51
  */
 @Controller
-@Monitor(category = "WEB")
 public class HomeController {
 	@RequestMapping(value = "/")
 	public String home() {
